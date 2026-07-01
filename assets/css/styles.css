@@ -505,6 +505,10 @@ tr:last-child td { border-bottom: 0; }
   .guide-card-featured { grid-column: auto; }
   .guide-card { min-height: auto; }
   .route-step { grid-template-columns: 1fr; }
+  .celestial-map { min-width: 0; }
+  .celestial-map th, .celestial-map td { padding: 0.7rem 0.55rem; font-size: 0.82rem; }
+  .celestial-map th:nth-child(2), .celestial-map td:nth-child(2),
+  .celestial-map th:nth-child(4), .celestial-map td:nth-child(4) { display: none; }
   #coverage table { min-width: 0; }
   #coverage th, #coverage td { padding: 0.7rem 0.55rem; font-size: 0.88rem; }
   #coverage th:first-child, #coverage td:first-child { width: 3.1rem; }
