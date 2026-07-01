@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Orna Field Guide is an unofficial fan-made guide site with practical tips, builds, and progression help for Orna: The GPS RPG and Hero of Aethric.">
+    <meta property="og:title" content="Orna Field Guide">
+    <meta property="og:description" content="Practical tips, builds, and progression help for Orna: The GPS RPG and Hero of Aethric.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#07110e">
+    <title>Orna Field Guide</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" aria-label="Primary">
+      <div class="header-inner">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">OF</span><span>Orna Field Guide</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="nav-toggle-bar"></span><span class="visually-hidden">Menu</span></button>
+        <nav class="site-nav" id="site-nav" data-site-nav>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="#guides">Guides</a>
+          <a href="guides/summoner.html">Summoner</a>
+          <a href="guides/towers-of-olympia.html">Towers</a>
+          <a href="guides/beginner-tips.html">Beginner Tips</a>
+          <a href="guides/gear-priorities.html">Gear</a>
+          <a href="resources.html">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-home" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">Orna Field Guide</h1>
+          <p class="hero-subtitle">Practical tips, builds, and progression help for Orna: The GPS RPG and Hero of Aethric.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="guides/summoner.html">Start with Summoner</a>
+            <a class="button button-ghost" href="guides/towers-of-olympia.html">Read Towers guide</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="map-panel">
+            <div class="compass-ring"></div>
+            <div class="route-card"><span class="route-tier">T7</span><span>Attuner</span></div>
+            <div class="route-card route-card-two"><span class="route-tier">T9+</span><span>Towers of Olympia</span></div>
+            <div class="route-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section guide-library" id="guides" aria-labelledby="guides-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="guides-title">Guide Library</h2>
+            <p>Short, practical reads for better decisions without living inside a spreadsheet.</p>
+          </div>
+          <label class="search-box">
+            <span>Filter guides</span>
+            <input type="search" placeholder="Search summoner, towers, gear..." autocomplete="off" data-guide-search>
+          </label>
+        </div>
+        <p class="result-count" aria-live="polite" data-guide-count>Showing all guides</p>
+        <div class="card-grid" data-guide-grid>
+          <a class="guide-card guide-card-featured" href="guides/summoner.html" data-guide-card data-title="Summoner Build Guide" data-tags="summoner attuner grand summoner auriga hydrus build pacts benefactor">
+            <span class="card-icon" aria-hidden="true">S</span><span class="card-date">Last updated July 1, 2026</span><h3>Summoner Build Guide</h3><p>The class route, summon priorities, pacts, gear targets, and common traps.</p>
+          </a>
+          <a class="guide-card guide-card-featured" href="guides/towers-of-olympia.html" data-guide-card data-title="Towers of Olympia Guide" data-tags="towers olympia tower shards celestial titan workshop tower keys aethric">
+            <span class="card-icon" aria-hidden="true">O</span><span class="card-date">Last updated July 1, 2026</span><h3>Towers of Olympia Guide</h3><p>Keys, tower finding, shard strategy, Titan Workshop choices, celestial weapons, and personal towers.</p>
+          </a>
+          <a class="guide-card" href="guides/beginner-tips.html" data-guide-card data-title="Beginner Tips" data-tags="beginner kingdom shops blacksmith orns dungeons ward loadouts resources">
+            <span class="card-icon" aria-hidden="true">B</span><span class="card-date">Last updated July 1, 2026</span><h3>Beginner Tips</h3><p>Early habits that save orns, protect rare resources, and keep your character flexible.</p>
+          </a>
+          <a class="guide-card" href="guides/gear-priorities.html" data-guide-card data-title="Gear Priorities" data-tags="gear ward immunity farming upgrade event survival damage">
+            <span class="card-icon" aria-hidden="true">G</span><span class="card-date">Last updated July 1, 2026</span><h3>Gear Priorities</h3><p>How to balance damage, survival, ward, status protection, and farming bonuses.</p>
+          </a>
+          <a class="guide-card" href="guides/dungeon-tips.html" data-guide-card data-title="Dungeon Tips" data-tags="dungeon gauntlet keys boss hard endless ward">
+            <span class="card-icon" aria-hidden="true">D</span><span class="card-date">Last updated July 1, 2026</span><h3>Dungeon Tips</h3><p>Enter prepared, keep ward up, and know when to play safe.</p>
+          </a>
+          <a class="guide-card" href="guides/raid-tips.html" data-guide-card data-title="Raid Tips" data-tags="raid kingdom survival buffs debuffs damage practice">
+            <span class="card-icon" aria-hidden="true">R</span><span class="card-date">Last updated July 1, 2026</span><h3>Raid Tips</h3><p>Survive longer, manage buffs, and swap loadouts on purpose.</p>
+          </a>
+          <a class="guide-card" href="guides/tower-tips.html" data-guide-card data-title="Tower Tips" data-tags="tower towers olympia shards ward floor risk celestial">
+            <span class="card-icon" aria-hidden="true">T</span><span class="card-date">Last updated July 1, 2026</span><h3>Tower Tips</h3><p>Fast reminders for safer climbs, better shard banking, and less greed regret.</p>
+          </a>
+          <a class="guide-card" href="resources.html" data-guide-card data-title="Resources" data-tags="resources official codex community orna legends reddit discord sources">
+            <span class="card-icon" aria-hidden="true">L</span><span class="card-date">Last updated July 1, 2026</span><h3>Resources</h3><p>Official pages, archived guide sources, community hubs, and future references.</p>
+          </a>
+        </div>
+        <p class="empty-state" hidden data-empty-state>No matching guides yet. Try another keyword.</p>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <h2>How to use this guide</h2>
+          <p>Start with the guide closest to your current decision. If you are choosing a class, read Summoner. If you are spending Tower Shards, read Towers of Olympia before committing. If you are dying often, Gear Priorities usually helps more than chasing raw damage.</p>
+        </div>
+        <div class="note-panel">
+          <h3>Fan site disclaimer</h3>
+          <p>Unofficial fan-made guide site. Orna and Hero of Aethric are owned by Northern Forge Studios. This site is not affiliated with or endorsed by Northern Forge.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Unofficial fan-made guide site. Orna and Hero of Aethric are owned by Northern Forge Studios. This site is not affiliated with or endorsed by Northern Forge.</p>
+      <p><a href="resources.html">Sources and community resources</a></p>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
