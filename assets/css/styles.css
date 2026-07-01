@@ -438,7 +438,7 @@ h3 { font-size: 1.2rem; }
 .article-body ul, .article-body ol { padding-left: 1.25rem; }
 .article-body li + li { margin-top: 0.48rem; }
 
-.toc { position: sticky; top: 5.5rem; padding: 1rem; }
+.toc { position: static; align-self: start; padding: 1rem; }
 .toc h2 { margin-bottom: 0.7rem; font-size: 1rem; }
 .toc a {
   display: block;
