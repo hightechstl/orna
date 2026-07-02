@@ -4,6 +4,11 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const siteNav = document.querySelector("[data-site-nav]");
 
 if (navToggle && siteNav) {
+  function closeNav() {
+    navToggle.setAttribute("aria-expanded", "false");
+    siteNav.classList.remove("is-open");
+  }
+
   navToggle.addEventListener("click", () => {
     const isOpen = navToggle.getAttribute("aria-expanded") === "true";
     navToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -12,9 +17,23 @@ if (navToggle && siteNav) {
 
   siteNav.addEventListener("click", (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      navToggle.setAttribute("aria-expanded", "false");
-      siteNav.classList.remove("is-open");
+      closeNav();
     }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      navToggle.getAttribute("aria-expanded") === "true" &&
+      event.target instanceof Node &&
+      !siteNav.contains(event.target) &&
+      !navToggle.contains(event.target)
+    ) {
+      closeNav();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNav();
   });
 }
 
